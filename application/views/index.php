@@ -301,138 +301,138 @@
   </section>
   <!-- section close -->
 
-  <!-- <section id="registration">
-      <h2 class="secondary-heading">Registration</h2>
-      <div class="container">
-        <div class="row">
+  <section id="registration">
+    <h2 class="secondary-heading">Registration</h2>
+    <div class="container">
+      <div class="row">
 
-            <form name="contactForm" id='regis_form' class="form-underline" method="post" action='registration.php'>
+        <form name="contactForm" id='regis_form' class="form-underline" method="post" action='registration.php'>
 
-              <div class="col-md-6">
-                  <div class="field-set">
-                    <label>Nama Lengkap</label>
-                    <input type='text' name='regis_name' id='regis_name' class="form-control">
-                  </div>
-  
-                  <div class="field-set">
-                    <label>Tanggal Lahir</label>
-                    <input type='text' name='regis_ttl' id='regis_ttl' class="form-control">
-                  </div>
-  
-                  <div class="field-set">
-                    <label>Agama</label>
-                    <select name="regis_agama" id="regis_agama">
-                      <option value="islam">ISLAM</option>
-                      <option value="kristen">KRISTEN</option>
-                      <option value="budha">BUDHA</option>
-                      <option value="hindu">HINDU</option>
-                      <option value="konghucu">KONGHUCU</option>
-                      <option value="dll">Dan Lain-Lain</option>
-                    </select>
-                  </div>
-  
-                  <div class="field-set">
-                    <label>Alamat</label>
-                    <div class="field-set">
-                        <textarea name='regis_alamat' id='regis_alamat' class="form-control"></textarea>
-                    </div>
-                  </div>
-  
-                  <div class="field-set">
-                      <label>Kelas</label>
-                      <select name="regis_kelas" id="regis_kelas" class="form-control">
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                      </select>
-                  </div>
-  
-                  <div class="field-set">
-                    <label>Asal Sekolah</label>
-                    <input type='text' name='regis_asal_sekolah' id='regis_asal_sekolah' class="form-control">
-                  </div>
+          <div class="col-md-6">
+            <div class="field-set">
+              <label>Nama Lengkap</label>
+              <input type='text' name='regis_name' id='regis_name' class="form-control">
+            </div>
 
-                  <div class="field-set">
-                    <label>Nama Orang Tua</label>
-                    <input type='text' name='regis_ortu' id='regis_ortu' class="form-control">
-                  </div>
+            <div class="field-set">
+              <label>Tanggal Lahir</label>
+              <input type='text' name='regis_ttl' id='regis_ttl' class="form-control">
+            </div>
+
+            <div class="field-set">
+              <label>Agama</label>
+              <select name="regis_agama" id="regis_agama">
+                <option value="islam">ISLAM</option>
+                <option value="kristen">KRISTEN</option>
+                <option value="budha">BUDHA</option>
+                <option value="hindu">HINDU</option>
+                <option value="konghucu">KONGHUCU</option>
+                <option value="dll">Dan Lain-Lain</option>
+              </select>
+            </div>
+
+            <div class="field-set">
+              <label>Alamat</label>
+              <div class="field-set">
+                <textarea name='regis_alamat' id='regis_alamat' class="form-control"></textarea>
               </div>
-              
-              <div class="col-md-6">
-                <div class="field-set">
-                  <label>No Telp (Ayah/Ibu/Siswa)</label>
-                  <input type='text' name='regis_phone' id='regis_phone' class="form-control">
-                </div>  
+            </div>
 
-                <div class="field-set">
-                  <label>E-mail</label>
-                  <input type='text' name='regis_email' id='regis_email' class="form-control">
-                </div> 
+            <div class="field-set">
+              <label>Kelas</label>
+              <select name="regis_kelas" id="regis_kelas" class="form-control">
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
 
-                <div class="field-set">
-                  <label>Prestasi</label>
-                  <div class="field-set">
-                      <textarea name='regis_prestasi' id='regis_prestasi' class="form-control"></textarea>
-                  </div>
-                </div>
+            <div class="field-set">
+              <label>Asal Sekolah</label>
+              <input type='text' name='regis_asal_sekolah' id='regis_asal_sekolah' class="form-control">
+            </div>
 
-                <div class="field-set">
-                    <label>Pilihan Program</label>
-                    <select name="regis_program" id="regis_program">
-                      <option value="1">Regular</option>
-                      <option value="2">Private</option>
-                      <option value="3">Intensive</option>
-                    </select>
-                </div>
+            <div class="field-set">
+              <label>Nama Orang Tua</label>
+              <input type='text' name='regis_ortu' id='regis_ortu' class="form-control">
+            </div>
+          </div>
 
-                <div class="field-set">
-                    <label>Pilihan Hari</label>
-                    <select name="regis_hari" id="regis_hari">
-                    <?php
-                    foreach ($_SESSION['hari'] as $row) :
-                      echo '<option value=' . $row['id_hari'] . '>' . $row['nama'] . '</option>';
-                    endforeach;
-                    ?>
-                    </select>
-                </div>
+          <div class="col-md-6">
+            <div class="field-set">
+              <label>No Telp (Ayah/Ibu/Siswa)</label>
+              <input type='text' name='regis_phone' id='regis_phone' class="form-control">
+            </div>
 
-                <div class="field-set">
-                    <label>Pilihan Jam</label>
-                    <select name="regis_jam" id="regis_jam">
-                      <?php
-                      foreach ($_SESSION['jam'] as $row) :
-                        echo '<option value=' . $row['id_jam'] . '>' . $row['nama'] . '</option>';
-                      endforeach;
-                      ?>
-                    </select>
-                </div>
+            <div class="field-set">
+              <label>E-mail</label>
+              <input type='text' name='regis_email' id='regis_email' class="form-control">
+            </div>
 
-                <div class="field-set">
-                    <label>Sumber Informasi</label>
-                    <select name="regis_sumber" id="regis_sumber">
-                      <option value="presentasi">Presentasi</option>
-                      <option value="majalah">Majalah</option>
-                      <option value="brosur">Brosur</option>
-                      <option value="teman">Teman</option>
-                      <option value="spanduk">Spanduk</option>
-                      <option value="lainlain">Lain-Lain </option>
-                    </select>
-                </div>
-
+            <div class="field-set">
+              <label>Prestasi</label>
+              <div class="field-set">
+                <textarea name='regis_prestasi' id='regis_prestasi' class="form-control"></textarea>
               </div>
-              <div class="col-md-12">
-                  <div id='submit_regis'>
-                      <input type='submit' id='send_registration' value='Register Now' class="btn btn-custom color-2">
-                  </div>
-                  <div id='regis_success' class='success'>Your registration has been sent successfully.</div>
-                  <div id='regis_fail' class='error'>Sorry, error occured this time sending your message.</div>
-              </div>
+            </div>
 
-            </form>
-          
-        </div>
+            <div class="field-set">
+              <label>Pilihan Program</label>
+              <select name="regis_program" id="regis_program">
+                <option value="1">Regular</option>
+                <option value="2">Private</option>
+                <option value="3">Intensive</option>
+              </select>
+            </div>
+
+            <div class="field-set">
+              <label>Pilihan Hari</label>
+              <select name="regis_hari" id="regis_hari">
+                <?php
+                foreach ($_SESSION['hari'] as $row) :
+                  echo '<option value=' . $row['id_hari'] . '>' . $row['nama'] . '</option>';
+                endforeach;
+                ?>
+              </select>
+            </div>
+
+            <div class="field-set">
+              <label>Pilihan Jam</label>
+              <select name="regis_jam" id="regis_jam">
+                <?php
+                foreach ($_SESSION['jam'] as $row) :
+                  echo '<option value=' . $row['id_jam'] . '>' . $row['nama'] . '</option>';
+                endforeach;
+                ?>
+              </select>
+            </div>
+
+            <div class="field-set">
+              <label>Sumber Informasi</label>
+              <select name="regis_sumber" id="regis_sumber">
+                <option value="presentasi">Presentasi</option>
+                <option value="majalah">Majalah</option>
+                <option value="brosur">Brosur</option>
+                <option value="teman">Teman</option>
+                <option value="spanduk">Spanduk</option>
+                <option value="lainlain">Lain-Lain </option>
+              </select>
+            </div>
+
+          </div>
+          <div class="col-md-12">
+            <div id='submit_regis'>
+              <input type='submit' id='send_registration' value='Register Now' class="btn btn-custom color-2">
+            </div>
+            <div id='regis_success' class='success'>Your registration has been sent successfully.</div>
+            <div id='regis_fail' class='error'>Sorry, error occured this time sending your message.</div>
+          </div>
+
+        </form>
+
       </div>
-    </section> -->
+    </div>
+  </section>
 
   <section id="contact" class="side-bg text-light">
     <div class="image-container col-md-7 pull-left">
