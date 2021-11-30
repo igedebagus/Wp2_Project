@@ -153,12 +153,12 @@ function submitRegis(){
 	  } else $("#regis_ortu").removeClass("error_input");
   
 	
-    0 == b && ($("#send_registration").attr({
-        disabled: "true",
-        value: "Sending..."
-    }), $.post("service_registration.php", $("#regis_form").serialize(), function(a) {
-        "sent" == a ? ($("#send_registration").remove(), $("#regis_success").fadeIn(500)) : ($("#regis_fail").fadeIn(500), $("#send_registration").removeAttr("disabled").attr("value", "Register Now"))
-    }))
+    // 0 == b && ($("#send_registration").attr({
+        // disabled: "true",
+        // value: "Sending..."
+    // }), $.post("service_registration.php", $("#regis_form").serialize(), function(a) {
+        // "sent" == a ? ($("#send_registration").remove(), $("#regis_success").fadeIn(500)) : ($("#regis_fail").fadeIn(500), $("#send_registration").removeAttr("disabled").attr("value", "Register Now"))
+    // }))
   })
 }
 

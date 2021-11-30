@@ -1,6 +1,6 @@
 <?php
-
-
+defined('BASEPATH') or exit('No direct script access allowed');
+$this->load->helper('url');
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landing Page</title>
 
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/"; ?> css/owl.carousel.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/"; ?>css/style.css">
-    <link rel="stylesheet" href="<?php echo base_url() . "assets/"; ?>css/responsive.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/responsive.css">
 
 </head>
 
@@ -28,7 +28,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4">
-                                <form name="contactForm" id='login_form' class="form-border img-shadow" method="post" action='service_login.php'>
+                                <form name="contactForm" class="form-border img-shadow" method="post" action="<?php echo base_url() . "index.php/auth/aksi_login"; ?>">
                                     <div class="box-login padding40">
                                         <h3>Login to your account</h3>
 
@@ -46,8 +46,8 @@
 
                                         <div class="spacer-single"></div>
 
-                                        <div id='submit' class="pull-left">
-                                            <input type='submit' id='submit_login' value='Login' class="btn btn-custom color-2">
+                                        <div class="pull-left">
+                                            <input type='submit' value='Login' class="btn btn-custom color-2">
                                         </div>
 
                                         <div id='login_success' class='success'>Your message has been sent successfully.</div>
@@ -68,11 +68,11 @@
     </div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/validation.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/Javascript" src="js/script.js"></script>
+    <script src="<?php echo base_url(); ?>js/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/validation.js"></script>
+    <script src="<?php echo base_url(); ?>js/jquery.waypoints.min.js"></script>
+    <script src="<?php echo base_url(); ?>js/owl.carousel.js"></script>
+    <script type="text/Javascript" src="<?php echo base_url(); ?>js/script.js"></script>
 </body>
 
 </html>

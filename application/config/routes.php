@@ -54,5 +54,16 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['homepage'] = 'Homepage/index';
-$route['login'] = 'Login/index';
+$route['login'] = 'Auth/index';
 $route['index'] = 'Index/index';
+$route['dashboard'] = 'Dashboard/index';
+$route['profile'] = 'Profile/index';
+$route['registration'] = 'Registration/index';
+$route['registration'] = 'Registration/Depan/index';
+$route['registration'] = 'Registration/Edit/index';
+$route['registration'] = 'Registration/Save/index';
+$route['registration'] = 'Registration/Delete/index';
+$route['registration'] = 'Edit/index';
+$route['guest'] = 'Guest/index';
+$route['guest'] = 'Guest/Awal/index';
+$route['guest'] = 'Guest/Ubah/index';
