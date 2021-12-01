@@ -69,7 +69,7 @@ class Registration extends CI_Controller
         }
     }
 
-    function ubah($id_regis)
+    function edit($id_regis)
     {
         $data['registration'] = $this->registration_model->getById($id_regis);
         $this->load->view('template/wrapper');
@@ -90,6 +90,11 @@ class Registration extends CI_Controller
         $this->form_validation->set_rules('email', 'Email', 'required');
         $this->form_validation->set_rules('prestasi', 'Prestasi', 'required');
         $this->form_validation->set_rules('nama_orangtua', 'Nama Orangtua', 'required');
+        // $this->form_validation->set_rules('id_program', 'Id Program', 'required');
+        // $this->form_validation->set_rules('id_hari', 'Id_Hari', 'required');
+        // $this->form_validation->set_rules('id_jam', 'Id_Jam', 'required');
+        // $this->form_validation->set_rules('tanggal_daftar', 'Tanggal Daftar', 'required');
+        // $this->form_validation->set_rules('status_payment', 'Status Payment', 'required');
         if ($this->form_validation->run() == true) {
             $id_regis = $this->input->post('id_regis');
             $data['nama_lengkap'] = $this->input->post('nama_lengkap');
@@ -102,6 +107,11 @@ class Registration extends CI_Controller
             $data['email'] = $this->input->post('email');
             $data['prestasi'] = $this->input->post('prestasi');
             $data['nama_orangtua'] = $this->input->post('nama_orangtua');
+            // $data['id_program'] = $this->input->post('id_program');
+            // $data['id_hari'] = $this->input->post('id_hari');
+            // $data['id_jam'] = $this->input->post('id_jam');
+            // $data['tanggal_daftar'] = $this->input->post('tanggal_daftar');
+            // $data['status_payment'] = $this->input->post('status_payment');
             $this->registration_model->update($data, $id_regis);
             redirect('/Registration');
         } else {
